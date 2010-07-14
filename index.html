@@ -195,20 +195,20 @@ function position(event) {
     <section>
         <div class="sectionContent">
 <pre class="sh_javascript">
-    // mouse position logic
-    if (event.pageX !== undefined 
-        && event.pageY !== undefined) {
-            x = event.pageX;
-            y = event.pageY;
-    } else if (event.clientX !== undefined
-        && event.clientY !== undefined) {
-            x = event.clientX
-                + document.body.scrollLeft
-                + document.documentElement.scrollLeft;
-            y = event.clientY 
-                + document.body.scrollTop 
-                + document.documentElement.scrollTop;
-    }
+// mouse position logic
+if (event.pageX !== undefined 
+    && event.pageY !== undefined) {
+        x = event.pageX;
+        y = event.pageY;
+} else if (event.clientX !== undefined
+    && event.clientY !== undefined) {
+        x = event.clientX
+            + document.body.scrollLeft
+            + document.documentElement.scrollLeft;
+        y = event.clientY 
+            + document.body.scrollTop 
+            + document.documentElement.scrollTop;
+}
 </pre>
         </div>
     </section>
