@@ -152,6 +152,13 @@ function release(event) {
 }
 
 /**
+ * preventDefault implementation for IE
+ */
+function preventDefault() {
+    this.returnValue = false;
+}
+
+/**
  * addEvent - I'd rather not, but jQuery seems to drop 'touches' :/
  * Note: This is my own take on a currying addEvent implementation.
  */
@@ -162,7 +169,8 @@ function addEvent(elem) {
         } else if (elem.attachEvent) {
             function callback() {
                 var e = window.event;
-                return handler.call(elem, event);
+                e.preventDefault = preventDefault;
+                return handler.call(elem, e);
             }
             function remove(){
                 elem.detachEvent("on" + type, callback);
