@@ -66,6 +66,8 @@ function contact(event) {
     // only interact with triggered events
     if (trigger === event.type) {
         
+        event.preventDefault();
+
         // record the starting position
         var pos = position(event);
         startX = pos.x;
@@ -85,6 +87,8 @@ function move(event) {
     
     // only interact if after contact
     if (startX !== null && startY !== null) {
+    
+        event.preventDefault();
 
         // calculate the new offset    
         var
