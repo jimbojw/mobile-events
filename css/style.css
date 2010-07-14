@@ -1,0 +1,120 @@
+/**
+ * style.css
+ */
+
+/* document structure */
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* body */
+body {
+    font-family: Verdana, 'BitStream vera Sans', Helvetica, sans-serif;
+    /*background-image: url(../image/grid.png);*/
+    background-position: 10px 0;
+}
+
+/* header */
+.header {
+    background: #999;
+    color: white;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.header h1 {
+    font-size: 2em;
+    margin: 0.25em 0 0.25em 10px;
+}
+
+/* wrappers */
+.wrapper {
+    height: 100%;
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.content {
+    margin-top: 36px;
+    height: 100%;
+    left: 0;
+    position: relative;
+    width: 10000%; /* 100 side-by-side sections */
+}
+
+/* sections */
+.section {
+    float: left;
+    width: 1%; /* 1% of .content's 10000% is 100% of the screen width */
+    height: 100%;
+}
+.sectionContent {
+    padding: 18px 10px;
+}
+
+/* figures */
+.figure img {
+    background: white;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+.caption {
+    display: block;
+    margin: 0 0 1.5em;
+}
+
+
+/* nav */
+.nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.nav a {
+    color: black;
+}
+.nav h2 {
+    margin-bottom: 0;
+}
+.nav .toggle {
+    float: right;
+    margin-right: 1px;
+}
+.nav .toggle a {
+    padding: 0 10px;
+}
+.nav ul {
+    background: #666;
+    border-left: 2px outset #333;
+    clear: right;
+    color: white;
+    margin-right: 0;
+    padding-right: 10px;
+}
+.nav ul a {
+    color: white;
+}
+
+/* footer */
+.footer {
+    background: #999;
+    bottom: 0;
+    color: white;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+}
+.footer p {
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+
+

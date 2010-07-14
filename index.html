@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8 />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<title>touch event models</title>
+<link rel="stylesheet" type="text/css" href="css/sh_style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/blueprint.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+</head>
+<body>
+<div class="header">
+    <header>
+        <h1><span>touch event models</span></h1>
+    </header>
+</div>
+<div class="wrapper">
+<div class="content">
+    <div class="section" id="welcome">
+    <section>
+        <div class="sectionContent">
+            <h2><span>welcome</span></h2>
+            <div class="figure">
+            <figure>
+                <p><img src="image/jim-r-wilson.jpg" alt="Jim R. Wilson (jimbojw)" /></p>
+                <figcaption><span class="caption">Jim R. Wilson (jimbojw)</span></figcaption>
+            </figure>
+            </div>
+            <p>source</p>
+        </div>
+    </section>
+    </div>
+    <div class="section" id="wild-west">
+    <section>
+        <div class="sectionContent">
+            <h2><span>wild west</span></h2>
+            <p><span>version 2.0</span></p>
+            <ul>
+                <li><span>desktop with mouse</span></li>
+                <li><span>iProducts</span></li>
+                <li><span>android (1.x, 2.x)</span></li>
+                <li><span>Firefox</span></li>
+                <li><span>everything else</span></li>
+            </ul>
+            <p><a href="http://www.quirksmode.org/mobile/tableTouch.html" title="quirksmode: Touch table"><span>quirksmode: Touch table</span></a></p>
+        </div>
+    </section>
+    </div>
+    <div class="section" id="mouse-events">
+    <section>
+        <div class="sectionContent">
+            <h2><span>mouse events</span></h2>
+            <ul>
+                <li><span>mousedown</span></li>
+                <li><span>mouseup</span></li>
+                <li><span>mouseclick</span></li>
+                <li><span>mousemove</span></li>
+                <li><span>mouseover</span></li>
+                <li><span>mouseout</span></li>
+            </ul>
+            <p><a href="http://www.quirksmode.org/js/events_mouse.html" title="quirksmode: Mouse Events"><span>quirksmode: Mouse Events</span></a></p>
+        </div>
+    </section>
+    </div>
+    <div class="section" id="mouse-event-properties">
+    <section>
+        <div class="sectionContent">
+            <h2><span>mouse event properties</span></h2>
+            <ul>
+                <li><span>event.type</span></li>
+                <li><span>event.pageX</span></li>
+                <li><span>event.pageY</span></li>
+                <li><span>event.clientX</span></li>
+                <li><span>event.clientY</span></li>
+            </ul>
+            <p><a href="http://www.quirksmode.org/js/events_properties.html#position" title="quirksmode: Event properties - Mouse position"><span>quirksmode: Event properties - Mouse position</span></a></p>
+        </div>
+    </section>
+    </div>
+    <div class="section" id="webkit-touch-events">
+    <section>
+        <div class="sectionContent">
+            <h2><span>webkit touch events</span></h2>
+            <ul>
+                <li><span>touchstart</span></li>
+                <li><span>touchmove</span></li>
+                <li><span>touchend</span></li>
+                <li><span>touchcancel</span></li>
+            </ul>
+            <p><a href="http://developer.apple.com/safari/library/documentation/appleapplications/reference/safariwebcontent/handlingevents/handlingevents.html#//apple_ref/doc/uid/TP40006511-SW22" title="Safari Web Content Guide: Handling Multi-Touch Events"><span>Safari Web Content Guide: Handling Multi-Touch Events</span></a></p>
+        </div>
+    </section>
+    </div>
+    <div class="section" id="webkit-event-properties">
+    <section>
+        <div class="sectionContent">
+            <h2><span>webkit event properties</span></h2>
+            <ul>
+                <li><span>event.touches</span></li>
+                <li><span>event.changedTouches</span></li>
+                <li><span>event.targetTouches</span></li>
+            </ul>
+            <pre class="sh_javascript">var touch = event.changedTouches[0];</pre>
+            <ul>
+                <li><span>touch.pageX</span></li>
+                <li><span>touch.pageY</span></li>
+            </ul>
+        </div>
+    </section>
+    </div>
+    <div class="section" id="webkit-gesture-events">
+    <section>
+        <div class="sectionContent">
+            <h2><span>webkit gesture events</span></h2>
+            <ul>
+                <li><span>gesturestart</span></li>
+                <li><span>gesturechange</span></li>
+                <li><span>gestureend</span></li>
+            </ul>
+            <p><a href="http://developer.apple.com/safari/library/documentation/appleapplications/reference/safariwebcontent/handlingevents/handlingevents.html#//apple_ref/doc/uid/TP40006511-SW23" title="Safari Web Content Guide: Handling Gesture Events"><span>Safari Web Content Guide: Handling Gesture Events</span></a></p>
+        </div>
+    </section>
+    </div>
+    <div class="section" id="webkit-event-hacks">
+    <section>
+        <div class="sectionContent">
+            <h2><span>webkit event hacks</span></h2>
+            <ul>
+                <li><span>event.touches.length</span></li>
+                <li><span>event.preventDefault()</span></li>
+            </ul>
+        </div>
+    </section>
+    </div>
+    <div class="section" id="mozilla-touch-events">
+    <section>
+        <div class="sectionContent">
+            <h2><span>mozilla touch events</span></h2>
+            <ul>
+                <li><span>MozTouchDown</span></li>
+                <li><span>MozTouchMove</span></li>
+                <li><span>MozTouchRelease</span></li>
+            </ul>
+            <p><a href="http://hacks.mozilla.org/2009/08/multi-touch-firefox/" title="hacks.mozilla.org: bringing multi-touch to Firefox and the web"><span>hacks.mozilla.org: bringing multi-touch to Firefox and the web</span></a></p>
+        </div>
+    </section>
+    </div>
+    <div class="section" id="mozilla-event-properties">
+    <section>
+        <div class="sectionContent">
+            <h2><span>mozilla event properties</span></h2>
+            <ul>
+                <li><span>event.streamId</span></li>
+            </ul>
+        </div>
+    </section>
+    </div>
+    <div class="section" id="common-problems">
+    <section>
+        <div class="sectionContent">
+            <h2><span>common problems</span></h2>
+            <p><span>technical</span></p>
+            <ul>
+                <li><span>position</span></li>
+                <li><span>gestures</span></li>
+            </ul>
+            <p><span>philosophical</span></p>
+            <ul>
+                <li><span>hover</span></li>
+                <li><span>plurality</span></li>
+            </ul>
+        </div>
+    </section>
+    </div>
+    <div class="section">
+    <section>
+        <div class="sectionContent">
+<pre class="sh_javascript">
+/**
+ * find the position of an event
+ */
+function position(event) {
+    
+    var x, y;
+    
+    // magic
+
+    return { x: x, y: y };
+}
+</pre>
+        </div>
+    </section>
+    </div>
+    <div class="section">
+    <section>
+        <div class="sectionContent">
+<pre class="sh_javascript">
+    // mouse position logic
+    if (event.pageX !== undefined 
+        && event.pageY !== undefined) {
+            x = event.pageX;
+            y = event.pageY;
+    } else if (event.clientX !== undefined
+        && event.clientY !== undefined) {
+            x = event.clientX
+                + document.body.scrollLeft
+                + document.documentElement.scrollLeft;
+            y = event.clientY 
+                + document.body.scrollTop 
+                + document.documentElement.scrollTop;
+    }
+</pre>
+        </div>
+    </section>
+    </div>
+    <div class="section">
+    <section>
+        <div class="sectionContent">
+<pre class="sh_javascript">
+var touch, x, y;
+
+if (event.touches
+    && event.touches.length) {
+        touch = event.touches[0];
+        x = touch.pageX;
+        y = touch.pageY;
+} else if (event.changedTouches
+    && event.changedTouches.length) {
+        touch = event.changedTouches[0];
+        x = touch.pageX;
+        y = touch.pageY;
+} else if (event.pageX ...
+</pre>
+        </div>
+    </section>
+    </div>
+    <div class="section" id="cross-environment-hacking">
+    <section>
+        <div class="sectionContent">
+            <h2><span>cross environment hacking</span></h2>
+            <ul>
+                <li><span>multiply attached handlers</span></li>
+                <li><span>event detection</span></li>
+            </ul>
+        </div>
+    </section>
+    </div>
+    <div class="section">
+    <section>
+        <div class="sectionContent">
+<pre class="sh_javascript">
+var trigger = null;
+
+function contact(event) {
+    
+    // detect trigger type
+    if (!trigger) {
+        trigger = event.type;
+    }
+    
+    // only interact with triggered events
+    if (trigger === event.type) {
+        // ... handle
+    }
+    
+}
+</pre>
+        </div>
+    </section>
+    </div>
+    <div class="section">
+    <section>
+        <div class="sectionContent">
+<pre class="sh_javascript">
+// bind handlers
+addEvent($wrapper[0])
+    ('mousedown', contact)
+    ('touchstart', contact)
+    ('MozTouchDown', contact)
+    ('mousemove', move)
+    ('touchmove', move)
+    ('MozTouchMove', move);
+addEvent(document)
+    ('mouseup', release)
+    ('touchend', release)
+    ('MozTouchRelease', release);
+</pre>
+        </div>
+    </section>
+    </div>
+    <div class="section" id="thanks">
+    <section>
+        <div class="sectionContent">
+            <h2><span>thanks!</span></h2>
+            <p><span>Copyright &copy; 2010 Jim R. Wilson (jimbojw)</span></p>
+            <p><a href="http://www.opensource.org/licenses/mit-license.php" title="MIT License" rel="license"><span>MIT License</span></a></p>
+        </div>
+    </section>
+    </div>
+</div>
+</div>
+<div class="nav" id="nav">
+    <nav>
+        <h2 class="toggle"><a href="#nav"><span>+</span></a></h2>
+        <ul style="display:none">
+            <li><a href="#welcome"><span>welcome</span></a></li>
+            <li><a href="#wild-west"><span>wild-west</span></a></li>
+            <li><a href="#mouse-events"><span>mouse events</span></a></li>
+            <li><a href="#mouse-event-properties"><span>mouse event properties</span></a></li>
+            <li><a href="#webkit-touch-events"><span>webkit touch events</span></a></li>
+            <li><a href="#webkit-event-properties"><span>webkit event properties</span></a></li>
+            <li><a href="#webkit-gesture-events"><span>webkit gesture events</span></a></li>
+            <li><a href="#webkit-event-hacks"><span>webkit event hacks</span></a></li>
+            <li><a href="#mozilla-touch-events"><span>mozilla touch events</span></a></li>
+            <li><a href="#mozilla-event-properties"><span>mozilla event properties</span></a></li>
+            <li><a href="#common-problems"><span>common problems</span></a></li>
+            <li><a href="#cross-environment-hacking"><span>cross environment hacking</span></a></li>
+            <li><a href="#thanks"><span>thanks</span></a></li>
+        </ul>
+    </nav>
+</div>
+<div class="footer">
+    <footer>
+        <p><span>Copyright &copy; 2010 Jim R. Wilson (jimbojw)</span></p>
+    </footer>
+</div>
+<script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="js/swipe.js"></script>
+<script type="text/javascript" src="js/sh_main.min.js"></script>
+<script type="text/javascript" src="js/sh_javascript.min.js"></script>
+<script type="text/javascript">sh_highlightDocument();</script>
+</body>
+</html>
+
+
