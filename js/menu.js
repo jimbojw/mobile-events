@@ -49,7 +49,10 @@ function togglenav(event) {
 $toggle
     .bind('touchend', togglenav)
     .bind('mouseup', togglenav)
-    .bind('MozTouchUp', togglenav)
-    .bind('MozTouchRelease', togglenav);
+    .bind('MozTouchRelease', togglenav)
+    .bind('click', function(e) {
+        e.preventDefault();
+    });
+    
 
 })(window.jQuery, window, window.document);
